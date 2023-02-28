@@ -1,6 +1,6 @@
-import '../App.css';
-import OwnerOne from '../assets/MarioandAdrianA.jpg';
-import OwnerTwo from '../assets/MarioandAdrianb.jpg';
+import '../../App.css';
+import OwnerOne from '../../assets/MarioandAdrianA.jpg';
+import OwnerTwo from '../../assets/MarioandAdrianb.jpg';
 function About() {
     return (
         <article className="about">

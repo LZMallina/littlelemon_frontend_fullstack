@@ -3,9 +3,10 @@ import { Formik, Form } from "formik";
 import * as Yup from 'yup'
 import FormikControl from './FormikControl';
 import saveData from '../hooks/saveData';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 function BookingForm({ submittedDate, pickedTime, submittedGuestN, goUp }) {
     
+    const confirm = useNavigate();
     //convert submittedDate to human standard
     const formatDate = submittedDate?new Date(submittedDate).toLocaleDateString():new Date().toLocaleDateString();
 
@@ -61,6 +62,8 @@ function BookingForm({ submittedDate, pickedTime, submittedGuestN, goUp }) {
         onSubmitProps.setSubmitting(false);
         onSubmitProps.resetForm();
         console.log("form submitted")
+
+        confirm("/confirmation")
     }
 
 
@@ -111,10 +114,6 @@ function BookingForm({ submittedDate, pickedTime, submittedGuestN, goUp }) {
                     </Form>
                 }}
                 </Formik>
-                <p>
-                    <Link to="/confirmation"><span>CLICK HERE</span></Link>
-                    to see your confirmation.
-            </p>
             </section>
         </section>
     )

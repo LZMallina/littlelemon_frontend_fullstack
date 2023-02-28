@@ -1,8 +1,8 @@
-import '../App.css';
-import '../components/forms/Booking.css'
+import '../../App.css';
+import '../forms/Booking.css'
 import { Formik, Form } from "formik";
 import * as Yup from 'yup'
-import FormikControl from '../components/forms/FormikControl';
+import FormikControl from '../forms/FormikControl';
 
 
 function RegistrationForm() {

@@ -1,8 +1,8 @@
-import '../App.css'
+import '../../App.css'
 import { Link } from 'react-router-dom';
 import { Formik, Form } from "formik";
 import * as Yup from 'yup'
-import FormikControl from '../components/forms/FormikControl';
+import FormikControl from '../forms/FormikControl';
 
 
 function Login() {

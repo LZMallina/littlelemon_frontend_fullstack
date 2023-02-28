@@ -1,10 +1,10 @@
-import '../App.css'
+import '../../App.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons"
 import { useState, useEffect } from 'react';
-import Foodlist from './menu/Foodlist';
-import Winelist from './menu/Winelist';
-import Weeklyspecialslist from './menu/Weeklyspecialslist';
+import Foodlist from '../menu/Foodlist';
+import Winelist from '../menu/Winelist';
+import Weeklyspecialslist from '../menu/Weeklyspecialslist';
 
 const categories = ["FULL MENU", 'WINE', 'WEEKLY SPECIALS'];
 

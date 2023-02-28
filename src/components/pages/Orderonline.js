@@ -1,8 +1,8 @@
-import '../App.css';
-import './order/Order.css'
+import '../../App.css';
+import '../order/Order.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faTrash, faCirclePlus, faCircleMinus } from "@fortawesome/free-solid-svg-icons"
-import useFetchdata from '../components/hooks/useFetchdata';
+import useFetchdata from '../hooks/useFetchdata';
 import {useEffect, useState, useReducer} from 'react'
 
 

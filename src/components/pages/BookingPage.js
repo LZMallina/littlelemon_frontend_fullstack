@@ -1,10 +1,10 @@
-import '../App.css'
-import './forms/Booking.css';
-import BookingForm from './forms/BookingForm';
+import '../../App.css'
+import '../forms/Booking.css';
+import BookingForm from '../forms/BookingForm';
 import { Formik, Form } from "formik";
 //import * as Yup from 'yup'
-import FormikControl from '../components/forms/FormikControl';
-import BookingSlot from './forms/BookingSlot'
+import FormikControl from '../forms/FormikControl';
+import BookingSlot from '../forms/BookingSlot'
 import { useState, useEffect } from 'react';
 
 function BookingPage() {

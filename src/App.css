@@ -1,44 +1,20 @@
 /**Header**/
-header{ 
-    background:white;
-    border-bottom: 10px solid var(--gray);
-    width:100%;
-    display:flex;
-    justify-content:space-around;
-    position:fixed;
-    top:0px;
-    padding: 10px;
-    z-index:1;
-}
 .header_logo{
-    width:20rem;
-    height:5rem;
+    width:20vw;
+    height:5vw;
 }
-
 .nav_bar{
     font-family:var(--paragraph-font-family);
     font-weight: bold;
-    text-align:center;
-    padding-top:15px;
-}
-.nav_bar li{
-    list-style: none;
-    display:inline-block;
-    font-size: 1.5rem;
-}
-.nav-item{
-    text-decoration: none;
-    padding: 0px 15px 0px 15px;
     color:black;
+    position:relative;
+    left:50px;
+    font-size:1.5vw;
 }
+
 .nav-item:hover, .social-icon:hover{
     text-decoration-line: underline;
     color:var(--yellow)
-}
-.toggle-nav{
-    font-size:1.5rem;
-    padding-top:2rem;
-    display:none;
 }
 
 /***Footer***/
@@ -46,7 +22,7 @@ footer{
     background:var(--gray);
     display:flex;
     justify-content:space-around;
-    padding: 20px;
+    padding: 1.25vw;
     font-family: var(--paragraph-font-family);
     width:100%;
 }
@@ -60,49 +36,45 @@ footer{
 /**homepage**/
 .hero{
     background:var(--green);
-    width:100%;
+    font-family: var(--headings-font-family);
+    margin-top:7vw;
+    color:white;
     display:flex;
     justify-content: center;
-    font-family: var(--headings-font-family);
-    margin-top:7rem;
-    padding:2rem;
 }
 .hero-description{
     margin-top:3rem;
-    width:25rem;
+    width:30vw;
 }
 .hero-image-container{
     margin-top:3rem;
-    width:25rem;
+    width:30vw;
+    padding-bottom:1.5rem;
 }
 .hero-image{
-    width:20rem;
-    display:block;
-    margin:auto;
+    width:20vw;
     border-radius:10px;
 }
 
 .hero-description h1{
     color:var(--yellow);
     font-size:5vw;
-    line-height: 0;
 }
 .hero-description h3{
     color:white;
-    font-size:2.5rem;
+    font-size:2.5vw;
     position:relative;
-    line-height:0;
 }
 .hero-description p{
-    font-size:1.25rem;
+    font-size:1.25vw;
     font-family:var(--paragraph-font-family);
     color:white;
 }
 .hero-description button{
-    font-size:2rem;
+    font-size:2vw;
     font-family:var(--headings-font-family);
-    padding:1rem;
-    width:15rem;
+    padding:1vw;
+    width:15vw;
     background:var(--yellow);
     border-radius:10px;
     border:none;
