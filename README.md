@@ -155,3 +155,6 @@ $ npm install react-datepicker --save
 $ npx json-server -p 3500 -w data/db.json
 
 * No access to API outside of localhost, therefore, hosted API on github instead.  Since github API is raw data, I can only perform fetch not POST or any other http functions.
+
+# Week 4
+* Redo app for mobile friendly with react-bootstrap and bootstrap.

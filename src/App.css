@@ -27,7 +27,7 @@ footer{
     width:100%;
 }
 .footer-logo{
-    width:5rem;
+    width:5vw;
 }
 .social-icon{
     color:black;
@@ -85,45 +85,34 @@ footer{
     cursor: pointer;
 }
 /****Special section****/
-.special-title{
-    display:flex;
-    justify-content:space-between;
-    width:80rem;
-    margin-left:auto;
-    margin-right:auto;
+.specials-title{
+    text-align:center;
+    padding-top:20px;
 }
 h2{
-    font-size:3rem;
+    font-size:3.5vw;
     font-family:var(--headings-font-family)
 }
-.special-title button{
-    font-size: 2rem;
+.specials button{
+    font-size: 2vw;
+    width:10vw;
     font-family: var(--headings-font-family);
-    width: 10rem;
-    height:3rem;
-    margin-top:3rem;
     background: var(--yellow);
     border-radius: 10px;
     border: none;
 }
-.special-title button:hover{
+.specials button:hover{
     background: var(--peach);
     color: var(--orange);
     cursor: pointer;
 }
-.special-container{
-    width:80rem;
-    margin-left:auto;
-    margin-right:auto;
-    display:grid;
-    grid-template-columns: repeat(3,minmax(0,1fr));
-    gap:1rem;
-}
+
 .special-display{
     background:var(--gray);
     padding:2rem;
     text-align:center;
     border-radius:10px;
+    margin-left:10px;
     margin-top:2rem;
     margin-bottom:2rem;
 }
@@ -136,8 +125,7 @@ h2{
 .special-display p{
     text-align:justify;
     font-family:var(--paragraph-font-family);
-    width:22rem;
-    height:5rem;
+    padding:10px;
 }
 h4{
     font-size:1.25rem;
@@ -149,22 +137,15 @@ h4{
 /***testtmonal**/
 .testimonial{
     background:var(--green);
-    width:100%;
-}
-.testimonial-container{
-    width: 80rem;
-    margin-left:auto;
-    margin-right:auto;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-}
-.testimonial-display{
-    background:none;
-    border-radius:10px;
-    margin-bottom:2rem;
     text-align:center;
-    padding:1rem;
+}
+
+.testimonial-display{
+    border-radius:10px;
+    text-align:center;
+    margin:40px;
+    padding-top:20px;
+    
 }
 .user-picture{
     width: 10rem;

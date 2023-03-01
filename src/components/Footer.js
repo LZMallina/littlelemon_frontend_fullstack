@@ -36,8 +36,7 @@ function Footer() {
   })
 /***********functions above **************/
     return (
-        <>
-            <footer>
+      <footer>
             <img src={footerlogo} alt="footer logo" className="footer-logo"></img>
             <section>
                 <p> 25 North Clark St <br />Chicago, IL 606602</p>
@@ -65,8 +64,7 @@ function Footer() {
                     {icons}
                     <p>2023 &copy; WNT</p>  
             </section>
-        </footer>
-        </>
+    </footer>
     )
 };
 
