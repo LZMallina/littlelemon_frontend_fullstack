@@ -57,37 +57,6 @@ const testimonials = [
   },
 ];
 function Home() {
-  //specials display
-  const specialsDisplay = specials.map((i) => {
-    return (
-      <div className="special-display" key={i.title}>
-        <div>
-          <h3>{i.title}</h3>
-          <h3 style={{ color: "var(--orange)" }}>{i.price}</h3>
-        </div>
-        <img src={i.getImageSrc()} alt={i.title} />
-        <p>{i.description}</p>
-        <h4>{i.message}</h4>
-      </div>
-    );
-  });
-
-  //testimonial display
-
-  const testimonialDisplay = testimonials.map((i) => {
-    return (
-      <div className="testimonial-display" key={i}>
-        <img
-          src={i.getImageSrc()}
-          alt="user pictures"
-          className="user-picture"
-        />
-        <p>{i.stars}</p>
-        <p>{i.comments}</p>
-      </div>
-    );
-  });
-  /****functions above*********/
   return (
     <main>
       <Container fluid className="hero">

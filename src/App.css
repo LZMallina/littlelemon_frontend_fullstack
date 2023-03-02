@@ -20,11 +20,8 @@
 /***Footer***/
 footer{
     background:var(--gray);
-    display:flex;
-    justify-content:space-around;
     padding: 1.25vw;
     font-family: var(--paragraph-font-family);
-    width:100%;
 }
 .footer-logo{
     width:5vw;
@@ -33,6 +30,7 @@ footer{
     color:black;
     padding: 30px 15px 0px 0px;
 }
+
 /**homepage**/
 .hero{
     background:var(--green);

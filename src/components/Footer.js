@@ -1,4 +1,5 @@
 import '../App.css'
+import { Container, Row, Col } from 'react-bootstrap';
 import footerlogo from '../assets/footerlogo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -37,35 +38,48 @@ function Footer() {
 /***********functions above **************/
     return (
       <footer>
-            <img src={footerlogo} alt="footer logo" className="footer-logo"></img>
-            <section>
-                <p> 25 North Clark St <br />Chicago, IL 606602</p>
-                <p>312-445-9658</p>
-                <p>email: littlelemon@meta.com</p>
-            </section>
-            <section>
-                <h4>Business Hours</h4>
-                    <table>
-                        <tr>
-                            <td>Mon - Fri:</td>
-                            <td>11:00 AM - 9:00 PM</td>
-                        </tr>
-                         <tr>
-                            <td>Sat:</td>
-                            <td>11:00 AM - 11:00 PM</td>
-                        </tr>
-                         <tr>
-                            <td>Sun:</td>
-                            <td>Closed</td>
-                        </tr>
-                </table>   
-            </section>
-            <section>
-                    {icons}
-                    <p>2023 &copy; WNT</p>  
-            </section>
-    </footer>
-    )
+        <Container fluid>
+          <Row>
+            <Col className ="text-center">
+              <img
+                src={footerlogo}
+                alt="footer logo"
+                className="footer-logo"
+              ></img>
+            </Col>
+            <Col>
+              <p>
+                25 North Clark St <br />
+                Chicago, IL 606602
+              </p>
+              <p>312-445-9658</p>
+              <p>email: littlelemon@meta.com</p>
+            </Col>
+            <Col>
+              <h4>Business Hours</h4>
+              <table>
+                <tr>
+                  <td>Mon - Fri:</td>
+                  <td>11:00 AM - 9:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Sat:</td>
+                  <td>11:00 AM - 11:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Sun:</td>
+                  <td>Closed</td>
+                </tr>
+              </table>
+            </Col>
+            <Col>
+              {icons}
+              <p>2023 &copy; WNT</p>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
+    );
 };
 
 export default Footer;
