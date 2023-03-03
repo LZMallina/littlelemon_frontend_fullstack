@@ -1,20 +1,17 @@
 /***food list***/
 .category-container{
     box-shadow: 0 8px 6px -6px var(--gray);
-    width:75rem;
-    margin-left:auto;
-    margin-right:auto;
+    padding:20px;
 }
 .category-container h2{
     font-family:var(--headings-font-family)
 }
 .i-container{
     font-family:var(--paragraph-font-family);
-    padding-bottom:1rem;
-    font-size:1.25rem;
+    font-size:2vw;
 }
 .price{
-    color:var(--orange)
+    color:var(--orange);
 }
 .i-container span{
     padding-left:2rem;

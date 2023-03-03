@@ -1,5 +1,6 @@
 import '../../App.css';
 import '../forms/Booking.css'
+import { Container } from 'react-bootstrap';
 import { Formik, Form } from "formik";
 import * as Yup from 'yup'
 import FormikControl from '../forms/FormikControl';
@@ -49,8 +50,7 @@ function RegistrationForm() {
 
 /***functions above********/
     return (
-        <div className="registration">
-    
+        <Container fluid style={{marginTop:'7vw', fontSize:'1.25rem', fontFamily:'var(--paragraph-font-family'}}>
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
@@ -60,7 +60,7 @@ function RegistrationForm() {
             >
                 {formik => {
                     return <Form className="bookForm">
-                        <div className="form-container">
+                        <Container className="form-container">
                         <p style ={{textAlign:'left', color:'var(--orange)'}}>Registration</p>
                         <FormikControl control="input" type="text" label="First Name" name="firstName" className ="input"/>
                         
@@ -82,11 +82,11 @@ function RegistrationForm() {
                       </div>
                         
                          <button type="submit" disabled={Formik.isSubmitting}>Submit</button>
-                    </div>
+                    </Container>
                 </Form>
                 }}
             </Formik>
-        </div>
+        </Container>
     )
 }
 

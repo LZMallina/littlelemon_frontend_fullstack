@@ -25,29 +25,22 @@ $npx create-react-app little-lemon
 
 # Week 2 (Project Foundations)
 
-## Setting up the HTML document
-1) Set up te intial semantic structure
-* replace the App component's root element div with react fragment
-2) Break the sections down into React components
-3) Add the logo and navigation elements
-* In order to get the links compatible to github page, you need version 5 of react-dom, which contains the Switch component
+## Setting up page and component folder and ensure routes work:
 
-To init react-dom version 5:
+### for git hub page deployment:
 
-$npm install react-router-dom@5
+*gitHub page does not work with BrowserRouter, you need version 5 of react-router-dom and HashRouter
 
-To init the most recent react-router-dom automatically:
+* $npm install react-router-dom@5
 
-$npm install react-router-dom
+### for other deployment use BrowserRouter version 6:
 
-* Open index.js,
+$npm install react-router-dom@6
 
-import {HashRouter} from 'react-router-dom'
+### Other dependencies:
 
-Wrap App/ with HashRouter.  For some reason, github page does not recognize BrowserRouter.
+* icons:
 
-4) Add the footer content
-* Add fontawesome dependency
 $ npm i --save @fortawesome/free-brands-svg-icons
 
 $ npm i --save @fortawesome/fontawesome-svg-core
@@ -84,7 +77,7 @@ $ npm i --save @fortawesome/react-fontawesome@latest
 
 1) Set up the CSS rules
 
-Client Requirment
+Client Requirments
 
 * Primary colors: hex #495E57, #F4CD14
 * Secondary Colors: hex #EE9972, #FBDABB, #EDEFEE, #333333
@@ -110,22 +103,18 @@ Client Requirment
 
 6) Verify that the HTML elements are styled correctly
 
-## Setting up the app components
-1) Recognize components to build, using your design
+* bootstrap and react-bootstrap
 
-2) Set up the navigation to make sure everything works
+$npm install bootstrap react-bootstrap
 
-3) Code the first version of the hompepage's components
+In index.js, import 'bootstrap/dist/css/bootstrap.min.css';
+# Week 3: Home, Footer, About, Menu
 
-4) Style the homepage components
+# Week 4: Reservation, Confirmation, Registration, Login
 
-# Week 3: Table booking system
+## Reservation
 
-## Defining the Bookings page
-
-1) Check the components and routes
-* create the BookingForm and BookingPage components
-
+### Forms
 * use Formik  to create forms and yup for form verification
 
 $ npm install formik --save
@@ -135,8 +124,9 @@ import {useFormik} from "formik";
 $ npm install yup react-yup
 
 import *as Yup from 'yup';
-* The BookingPage will contain the BookingForm components
-* Check that your routes and navigation works
+
+### BookingSlots
+
 * download react-datepicker
 
 $ npm install react-datepicker --save
@@ -156,5 +146,4 @@ $ npx json-server -p 3500 -w data/db.json
 
 * No access to API outside of localhost, therefore, hosted API on github instead.  Since github API is raw data, I can only perform fetch not POST or any other http functions.
 
-# Week 4
-* Redo app for mobile friendly with react-bootstrap and bootstrap.
+

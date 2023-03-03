@@ -5,7 +5,7 @@ import TextError from './TextError'
 function Radio(props) {
     const { label, name, options, ...rest } = props;
     return (
-        <div className="form-control">
+        <div className="forms-control">
             <label>{label}</label>
         <div className ="radio-container">
 

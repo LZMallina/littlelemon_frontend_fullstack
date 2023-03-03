@@ -25,7 +25,7 @@ const Weeklyspecialslist = () => {
     })
     return (
         <article className="weeklyspecials">
-            <h3>All weekly special items get 10% off!</h3>
+            <h3 style={{padding:'20px'}}>All weekly special items get 10% off!</h3>
             {isLoading && <p style ={{color:'blue'}}>Items are loading</p>}
             {fetchError && <p style={{ color: 'red', fontSize: '15px' }}>{`Error: ${fetchError}`}</p>}
             {weeklySpecials}

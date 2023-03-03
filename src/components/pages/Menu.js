@@ -1,4 +1,5 @@
 import '../../App.css'
+import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons"
 import { useState, useEffect } from 'react';
@@ -48,21 +49,21 @@ function Menu() {
     },[])
   
     return (
-        <article className="menu">
+        <Container fluid className="menu">
             <h1>Enjoy Your Meal!</h1>
-            <section className="buttons-container">
+            <Container>
                 {catButton}
-            </section>
-            <section className="menu-display-container">
+            </Container>
+            <Container className="menu-display-container">
                 {display}
-            </section>
+            </Container>
             <div className={appear ? 'scrolling-btn appear' : 'scrolling-btn'}
             
                 onClick ={()=>{window.scrollTo(0,0)}}
             >
                 <FontAwesomeIcon icon={faArrowCircleUp} />
             </div>
-        </article>
+        </Container>
     )
 }
 

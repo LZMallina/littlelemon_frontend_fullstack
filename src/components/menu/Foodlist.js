@@ -35,11 +35,11 @@ const Foodlist = () => {
              
         })
         return (
-            <section className="category-container" key={item}>
-                <h2>{item} 🍽️</h2>
-                {foodItem}
-            </section>
-        )
+          <section className="category-container" key={item}>
+              <h2>{item} 🍽️</h2>
+              {foodItem}
+          </section>
+        );
     })
 /*********functions above*******/
     return (

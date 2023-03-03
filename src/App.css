@@ -11,7 +11,6 @@
     left:50px;
     font-size:1.5vw;
 }
-
 .nav-item:hover, .social-icon:hover{
     text-decoration-line: underline;
     color:var(--yellow)
@@ -155,54 +154,37 @@ h4{
 /****Our Story ***/
 .about{
     background:var(--green);
-    margin-top:7rem;
-    width:100%;  
+    margin-top:7vw;
+    padding:20px; 
+    text-align:justify;
 }
-.story-container {
-    display: flex;
-    justify-content: space-between;
-    width: 80rem;
-    height: 40rem;
-    margin: auto;
-    gap: 1rem;
-}
-.story h1{
+.about h1{
     font-family:var(--headings-font-family);
     color: var(--yellow);
     font-size: 4rem;
-    line-height:0;
 }
-
-.story p{
+.about p{
     font-family:var(--paragraph-font-family);
     font-size:1.5rem;
     color:white;
 }
 
-.owner-pictures{
-    display:flex;
-    gap:1rem;
-    padding:1rem;
-}
 .owner-one, .owner-two{
     width:20rem;
     height:15rem;
     border-radius:10px;
+    margin:20px;
 }
-.owner-one{
-    position:relative;
-    top:15rem;
-}
+
 .owner-two{
-    position:relative;
-    top:3rem;
+   position:relative;
+   right:10vw;
 }
 /***menu****/
 .menu{
-    margin-top:7rem;
     text-align:center;
     background:var(--green);
-    padding-bottom:1rem;
+    padding:20px;
 }
 .menu h1{
     font-family: var(--headings-font-family);
@@ -210,19 +192,16 @@ h4{
     padding-top:7rem;
     font-size: 4rem;
 }
-.buttons-container{
-    padding:2rem;
-    display:flex;
-    justify-content:center;
-    gap:1rem;
-}
+
 .catBTN{
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: var(--headings-font-family);
     background: var(--yellow);
     border-radius: 10px;
     border: none;
-    padding:0.75rem;
+    width:20vw;
+    height:3vw;
+    margin:10px;
 }
 .catBTN:hover{
     background: var(--peach);
@@ -231,10 +210,7 @@ h4{
 }
 .menu-display-container{
     background:white;
-    width:80rem;
     border-radius:10px;
-    margin-right:auto;
-    margin-left:auto;
     border: 10px solid var(--yellow);
     border-style:double;
 }
@@ -242,7 +218,7 @@ h4{
     color:var(--gray);
     font-size:2rem;
     position:fixed;
-    bottom:0px;
+    bottom:50px;
     right:50px;
     visibility: hidden;
 }
@@ -250,20 +226,16 @@ h4{
     visibility: visible;
 }
 /***Reservation***/
-.booking-container{
-    margin-top:7rem;
-}
+
 .booking-header-container{
     text-align:center;
     background-image: url(./assets/thirdpic.jpg);
     background-size: cover;
     background-position: center;
-    padding-bottom:1rem;
-    width:100%;
+    padding:20px;
 }
 .booking-header-container h1{
-    padding-top:5rem;
-    font-size:5rem;
+    font-size:5vw;
     font-family:var(--headings-font-family);
     color:var(--orange);
 }
@@ -284,7 +256,6 @@ h4{
 }
 /****login****/
 .login{
-    margin-top: 7rem;
     background: var(--green);
     text-align:center;
     padding: 20px;
@@ -347,63 +318,21 @@ h4{
 .login span:hover{
     color:var(--peach);
     cursor: pointer;
-
-}
-/****Registration Form***/
-.registration{
-    margin-top: 7rem;
-    font-family: var(--paragraph-font-family);
-    font-size: 1.25rem;
 }
 /***Confirmation page **/
-.confirmation-container{
-    margin-top: 7rem;
-    background:var(--green);
-    padding:20px;
-    line-height: 0;
-}
+
 .information-container{
-    margin:auto;
     background:white;
-    width:70rem;
     padding:20px;
-    font-size:2rem;
-    line-height: 1;
+    font-size:2vw;
     font-family:var(--paragraph-font-family);
 }
-.confirmation-container h1{
-    text-align:center;
-    font-family:var(--headings-font-family);
-    font-size:3rem;
-    color:var(--yellow);
-}
-.grid{
-    width: 65rem;
-    margin-left:auto;
-    margin-right:auto;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-    text-align: center;
-}
-.grid2 {
-    width: 55rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    line-height: 1.5;
-}
+
 .map-container{
     background-image: url(./assets/map.jpg);
     background-size: cover;
     background-position: center;
-    padding-bottom: 1rem;
-    width:70rem;
-    height:30rem;
-    margin:auto;
-    padding:20px
+    height:25vw;
 }
 .closeOut{
     color:white;
@@ -411,7 +340,8 @@ h4{
     float:right;
     padding:10px;
     border-radius:45%;
-    
+    position:relative;
+    top:20px;
 }
 .closeOut:hover{
     background:var(--yellow);

@@ -1,5 +1,6 @@
 import '../../App.css'
 import '../forms/Booking.css';
+import {Stack} from 'react-bootstrap'
 import BookingForm from '../forms/BookingForm';
 import { Formik, Form } from "formik";
 //import * as Yup from 'yup'
@@ -136,41 +137,71 @@ const fetchAPI = function(date) {
     /***functions above********/
     
     return (
-        <article className="booking-container">
-            <section className="booking-header-container">
-                <h1>Find your table for any occasion</h1>
-            
+      <>
+        <Stack gap={3} style={{ marginTop: "7vw" }}>
+          <div className="booking-header-container">
+            <h1>Find your table for any occasion</h1>
             <Formik
-                initialValues={initialValues}
-                //validationSchema={validationSchema}
-                onSubmit={onSubmit}
-                validateOnChange={false}
-                validateOnBlur ={false}
+              initialValues={initialValues}
+              //validationSchema={validationSchema}
+              onSubmit={onSubmit}
+              validateOnChange={false}
+              validateOnBlur={false}
             >
-                {formik => {
-                    return <Form className="search-form">
-                    
-                        <FormikControl control="date" label="" name="selectedDate" />
-                    
-                        <FormikControl control="time" label="" name="selectedTime" />
-                        
-                        <FormikControl control="select" label="" name="customer" options={guestOptions} className="customer-number-input" />
-                    
-                        <button type="submit" disabled={Formik.isSubmitting}>Search</button>
-                    </Form>
-                }}
+              {(formik) => {
+                return (
+                  <Form className="search-form">
+                    <FormikControl
+                      control="date"
+                      label=""
+                      name="selectedDate"
+                    />
+
+                    <FormikControl
+                      control="time"
+                      label=""
+                      name="selectedTime"
+                    />
+
+                    <FormikControl
+                      control="select"
+                      label=""
+                      name="customer"
+                      options={guestOptions}
+                      className="customer-number-input"
+                    />
+                    <button type="submit" disabled={Formik.isSubmitting}>
+                      Search
+                    </button>
+                  </Form>
+                );
+              }}
             </Formik>
-        </section>
-        <section className="availability-container">
-                <h2>Available Time</h2>
-                <h3>{!submittedDate?`Date: ${new Date(today).toLocaleDateString()}`:`Date: ${new Date(submittedDate).toLocaleDateString()}` }</h3>
-            <BookingSlot hour={hour} availableTime={availableTime} handleClick ={handleClick} />
-            </section>
-            <section className="booking-form-container">
-                <BookingForm submittedDate={submittedDate} pickedTime={pickedTime} submittedGuestN={submittedGuestN} goUp={goUp} /> 
-            </section>
-    </article>        
-)
+          </div>
+          <div className="availability-container">
+            <h2>Available Time</h2>
+            <h3>
+              {!submittedDate
+                ? `Date: ${new Date(today).toLocaleDateString()}`
+                : `Date: ${new Date(submittedDate).toLocaleDateString()}`}
+            </h3>
+            <BookingSlot
+              hour={hour}
+              availableTime={availableTime}
+              handleClick={handleClick}
+            />
+          </div>
+          <div className="">
+            <BookingForm
+              submittedDate={submittedDate}
+              pickedTime={pickedTime}
+              submittedGuestN={submittedGuestN}
+              goUp={goUp}
+            />
+          </div>
+        </Stack>
+      </>
+    );
 }
 
 export default BookingPage;

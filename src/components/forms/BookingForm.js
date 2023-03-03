@@ -1,4 +1,5 @@
 import './Booking.css';
+import { Container } from 'react-bootstrap';
 import { Formik, Form } from "formik";
 import * as Yup from 'yup'
 import FormikControl from './FormikControl';
@@ -33,7 +34,6 @@ function BookingForm({ submittedDate, pickedTime, submittedGuestN, goUp }) {
         //reminder: [],//<-check box in formik is an array so the initial value should be an empty array
     };
     const validationSchema = Yup.object({
-        //reminder: Yup.string().required("Time slot selection required"),
         firstName: Yup.string().min(2, 'Too Short').max(50, 'Too long').required("required"),
         lastName: Yup.string().min(2, 'Too Short').max(50,'Too long').required("required"),
         email: Yup.string().email('invalid email').required(" required"),
@@ -69,8 +69,8 @@ function BookingForm({ submittedDate, pickedTime, submittedGuestN, goUp }) {
 
 /***functions above********/
     return (
-        <section className={`bookForm ${goUp?"goUp":null}`}>
-            <section className='form-container'>
+        <Container fluid className={`bookForm ${goUp?"goUp":null}`}>
+            <Container className='form-container'>
                 <section className="search-detail-container">
                 <h3>Details</h3>
                 <span>Date : {formatDate}</span>
@@ -114,8 +114,8 @@ function BookingForm({ submittedDate, pickedTime, submittedGuestN, goUp }) {
                     </Form>
                 }}
                 </Formik>
-            </section>
-        </section>
+            </Container>
+        </Container>
     )
 }
 
