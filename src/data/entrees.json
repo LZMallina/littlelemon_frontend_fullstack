@@ -1,0 +1,58 @@
+[
+  {
+    "id": "e1",
+    "categories": "Entrees",
+    "name": "Mixed Grille",
+    "price": 19.0,
+    "imgUrl": "/images/entrees/mixed_grille.png"
+  },
+  {
+    "id": "e1",
+    "categories": "Entrees",
+    "name": "Lamb Shank",
+    "price": 21.0,
+    "imgUrl": "/images/entrees/lamb_shank.png"
+  },
+  {
+    "id": "e2",
+    "categories": "Entrees",
+    "name": "Mediterranean Chicken",
+    "price": 18.0,
+    "imgUrl": "/images/entrees/Mediterranean_Chicken.png"
+  },
+  {
+    "id": "e3",
+    "categories": "Entrees",
+    "name": "Pastitsio",
+    "price": 16.0,
+    "imgUrl": "/images/entrees/Pastitsio.png"
+  },
+  {
+    "id": "e4",
+    "categories": "Entrees",
+    "name": "Mousaka",
+    "price": 16.0,
+    "imgUrl": "/images/entrees/Mousaka.png"
+  },
+  {
+    "id": "e5",
+    "categories": "Entrees",
+    "name": "Mediterranean Salmon",
+    "price": 19.0,
+    "imgUrl": "/images/entrees/Mediterranean_Salmon.png"
+  },
+  {
+    "id": "e6",
+    "categories": "Entrees",
+    "name": "Mediterranean Pasta",
+    "price": 16.0,
+    "imgUrl": "/images/entrees/mediterranean_pasta.png"
+  },
+  {
+    "id": "e7",
+    "categories": "Entrees",
+    "name": "Mujaddara",
+    "price": 15.0,
+    "imgUrl": "/images/entrees/Mujaddara.png"
+  }
+]

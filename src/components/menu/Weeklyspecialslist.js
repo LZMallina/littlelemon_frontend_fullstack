@@ -4,7 +4,6 @@ import { useEffect } from 'react'
 
 const Weeklyspecialslist = () => {
     const { isLoading, list, fetchError, fetchItems} = useFetchdata();
-    //const API_URL = '  http://localhost:3500/weeklyspecialsList';
     const API_URL = 'https://lzmallina.github.io/little_lemon_API/weeklyspecialsList.json';
 
     useEffect(() => {

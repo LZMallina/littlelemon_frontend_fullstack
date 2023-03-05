@@ -1,0 +1,44 @@
+[
+    {
+      "id": "B1",
+      "categories": "Beverages",
+      "name": "Sodas",
+      "price": 5.0,
+      "imgUrl": "/images/beverages/soda.png"
+    },
+    {
+      "id": "B2",
+      "categories": "Beverages",
+      "name": "Iced TeaCoffee",
+      "price": 5.0,
+      "imgUrl": "/images/beverages/iced_tea_coffee.png"
+    },
+    {
+      "id": "B3",
+      "categories": "Beverages",
+      "name": "Hot Tea",
+      "price": 5.0,
+      "imgUrl": "/images/beverages/hot_tea.png"
+    },
+    {
+      "id": "B4",
+      "categories": "Beverages",
+      "name": "Greek Coffee",
+      "price": 5.0,
+      "imgUrl": "/images/beverages/greek_coffee.png"
+    },
+    {
+      "id": "B5",
+      "categories": "Beverages",
+      "name": "Iced FrappeSourotti",
+      "price": 5.0,
+      "imgUrl": "/images/beverages/Iced_FrappeSourotti.png"
+    },
+    {
+      "id": "B6",
+      "categories": "Beverages",
+      "name": "Sparkling Water",
+      "price": 5.0,
+      "imgUrl": "/images/beverages/sparkling_water.png"
+    }
+]

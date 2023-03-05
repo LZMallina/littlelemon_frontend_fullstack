@@ -5,7 +5,6 @@ import {useEffect} from 'react'
 const Foodlist = () => {
 
     const { isLoading, list, fetchError, fetchItems} = useFetchdata();
-    //const API_URL = 'http://localhost:3500/foodList';
     const API_URL = 'https://lzmallina.github.io/little_lemon_API/foodList.json';
     useEffect(() => {
         fetchItems(API_URL)

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "S1",
+    "categories": "Sides",
+    "name": "Torshi",
+    "price": 3.0,
+    "imgUrl": "/images/sides/Torshi.png"
+  },
+  {
+    "id": "S2",
+    "categories": "Sides",
+    "name": "Cucumbers & Carrots",
+    "price": 3.0,
+    "imgUrl": "/images/sides/cucumber_carrot.png"
+  },
+  {
+    "id": "S3",
+    "categories": "Sides",
+    "name": "Kalamata Olives",
+    "price": 3.0,
+    "imgUrl": "/images/sides/Kalamata_Olives.png"
+  },
+  {
+    "id": "S4",
+    "categories": "Sides",
+    "name": "Pepperoncini",
+    "price": 3.0,
+    "imgUrl": "/images/sides/Pepperoncini.png"
+  },
+  {
+    "id": "S5",
+    "categories": "Sides",
+    "name": "Side Greek",
+    "price": 6.5,
+    "imgUrl": "/images/sides/side_greek.png"
+  },
+  {
+    "id": "S6",
+    "categories": "Sides",
+    "name": "Fettoush Salad",
+    "price": 6.5,
+    "imgUrl": "/images/sides/Fettoush_Salad.png"
+  },
+  {
+    "id": "S7",
+    "categories": "Sides",
+    "name": "Fresh Cut Fries",
+    "price": 4.5,
+    "imgUrl": "/images/sides/fresh_cut_fries.png"
+  },
+  {
+    "id": "S8",
+    "categories": "Sides",
+    "name": "Basmati Rice",
+    "price": 4.5,
+    "imgUrl": "/images/sides/Basmati_Rice.png"
+  },
+  {
+    "id": "S9",
+    "categories": "Sides",
+    "name": "Greek Potatoes",
+    "price": 5.5,
+    "imgUrl": "/images/sides/greek_potato.png"
+  },
+  {
+    "id": "S10",
+    "categories": "Sides",
+    "name": "Green Beans",
+    "price": 5.5,
+    "imgUrl": "/images/sides/green_beans.png"
+  },
+  {
+    "id": "S11",
+    "categories": "Sides",
+    "name": "Spanakorizo",
+    "price": 5.5,
+    "imgUrl": "/images/sides/Spanakorizo.png"
+  },
+  {
+    "id": "S12",
+    "categories": "Sides",
+    "name": "Sauteed Veggies",
+    "price": 5.5,
+    "imgUrl": "/images/sides/Sauteed_Veggies.png"
+  },
+  {
+    "id": "S13",
+    "categories": "Sides",
+    "name": "Tzatziki",
+    "price": 1.25,
+    "imgUrl": "/images/sides/Tzatziki.png"
+  },
+  {
+    "id": "S14",
+    "categories": "Sides",
+    "name": "Spicy Yogurt Tahini",
+    "price": 1.25,
+    "imgUrl": "/images/sides/Spicy_Yogurt_Tahini.png"
+  },
+  {
+    "id": "S15",
+    "categories": "Sides",
+    "name": "Yogurt Sauce Garlic Paste",
+    "price": 1.25,
+    "imgUrl": "/images/sides/Yogurt_Sauce_Garlic_Paste.png"
+  },
+  {
+    "id": "S16",
+    "categories": "Sides",
+    "name": "Pita",
+    "price": 1.0,
+    "imgUrl": "/images/sides/pita.png"
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "a1",
+    "categories": "Appetizers",
+    "name": "Dolmades",
+    "price": 8.0,
+    "imgUrl": "/images/appetizers/Dolmades.png"
+  },
+  {
+    "id": "a2",
+    "categories": "Appetizers",
+    "name": "Tabouleh",
+    "price": 7.0,
+    "imgUrl": "/images/appetizers/Taouleh.png"
+  },
+  {
+    "id": "a3",
+    "categories": "Appetizers",
+    "name": "Saganaki",
+    "price": 11.0,
+    "imgUrl": "/images/appetizers/Saganaki.png"
+  },
+  {
+    "id": "a4",
+    "categories": "Appetizers",
+    "name": "Fried Kibbeh",
+    "price": 8.5,
+    "imgUrl": "/images/appetizers/Fried_Kibbeh.png"
+  },
+
+  {
+    "id": "a5",
+    "categories": "Appetizers",
+    "name": "Calamari",
+    "price": 11.0,
+    "imgUrl": "/images/appetizers/Calamari.png"
+  },
+  {
+    "id": "a6",
+    "categories": "Appetizers",
+    "name": "Falafel",
+    "price": 11.0,
+    "imgUrl": "/images/appetizers/Falafel.png"
+  },
+  {
+    "id": "a6",
+    "categories": "Appetizers",
+    "name": "Spanakopita",
+    "price": 10.0,
+    "imgUrl": "/images/appetizers/Spanakopita.png"
+  },
+  {
+    "id": "a8",
+    "categories": "Appetizers",
+    "name": "Brachrocett",
+    "price": 6.99,
+    "imgUrl": "/images/appetizers/brachrocett.jpg"
+  }
+]

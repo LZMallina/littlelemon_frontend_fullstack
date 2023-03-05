@@ -1,0 +1,51 @@
+[
+  {
+    "id": "w1",
+    "categories": "Wraps and Burgers",
+    "name": "Greek Burger",
+    "price": 10.0,
+    "imgUrl": "/images/wrapsAndburgers/greek_burger.png"
+  },
+  {
+    "id": "w2",
+    "categories": "Wraps and Burgers",
+    "name": "Lamb Burger",
+    "price": 11.0,
+    "imgUrl": "/images/wrapsAndburgers/lamb_burger.png"
+  },
+  {
+    "id": "w3",
+    "categories": "Wraps and Burgers",
+    "name": "Falafel",
+    "price": 9.0,
+    "imgUrl": "/images/wrapsAndburgers/Falafel.png"
+  },
+  {
+    "id": "w4",
+    "categories": "Wraps and Burgers",
+    "name": "Crispy Chicken",
+    "price": 9.5,
+    "imgUrl": "/images/wrapsAndburgers/crispy_chicken.png"
+  },
+  {
+    "id": "w5",
+    "categories": "Wraps and Burgers",
+    "name": "Veggie",
+    "price": 9.0,
+    "imgUrl": "/images/wrapsAndburgers/veggie_burger.png"
+  },
+  {
+    "id": "w6",
+    "categories": "Wraps and Burgers",
+    "name": "Gyro",
+    "price": 9.5,
+    "imgUrl": "/images/wrapsAndburgers/gyro.png"
+  },
+  {
+    "id": "w7",
+    "categories": "Wraps and Burgers",
+    "name": "Souvlaki",
+    "price": 11.0,
+    "imgUrl": "/images/wrapsAndburgers/Souvlaki.png"
+  }
+]

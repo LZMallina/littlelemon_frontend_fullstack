@@ -134,7 +134,7 @@ $ npm install react-datepicker --save
 2. Code the form structure
 * use sessionStorage and localStorage to store inputs
 
-3. Create a local host data base API to store items in the menu so we can use fetch
+3. Create a local host data base API to mimic server side API
 
 * create a folder outside of src name: data
 * inside of data, create a new file name db.json, which would be a Object storage
@@ -143,7 +143,12 @@ $ npm install react-datepicker --save
 * open a new terminal window, create a REST API in localHost3500
 
 $ npx json-server -p 3500 -w data/db.json
+  const API_URL = '<http://localhost:3500/wineList>';
 
 * No access to API outside of localhost, therefore, hosted API on github instead.  Since github API is raw data, I can only perform fetch not POST or any other http functions.
 
+# Week 5: Order online
 
+## Organize the data
+* data folder inside SRC
+* image folder inside public

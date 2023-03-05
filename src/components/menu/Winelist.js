@@ -4,7 +4,6 @@ import { useEffect } from 'react'
 
 const Winelist = () => {
     const { isLoading, list, fetchError, fetchItems} = useFetchdata();
-    //const API_URL = '  http://localhost:3500/wineList';
     const API_URL = 'https://lzmallina.github.io/little_lemon_API/wineList.json';
 
     useEffect(() => {

@@ -1,3 +1,8 @@
+.shoppingCart{
+    width:3.5rem;
+    height:3.5rem;
+    font-size:1.5rem;
+}
 .deliveryChoice {
     background: var(--green);
     padding: 20px;
