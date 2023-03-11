@@ -1,7 +1,27 @@
 .shoppingCart{
-    width:3.5rem;
-    height:3.5rem;
+    width:3rem;
+    height:3rem;
     font-size:1.5rem;
+    color:var(--yellow);
+}
+.number{
+    background:var(--green);
+    color:white;
+    width:1.5rem;
+    height:1.5rem;
+    text-align:center;
+    border-radius:50%;
+    position:relative;
+    top:15px;
+    right:10px;
+}
+.orderCat-BTN{
+    background:var(--yellow);
+    margin:10px;
+    color:var(--green)
+}
+.orderCat-BTN:active{
+    background:blue;
 }
 .deliveryChoice {
     background: var(--green);
