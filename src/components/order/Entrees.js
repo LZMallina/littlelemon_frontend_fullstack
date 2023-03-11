@@ -1,16 +1,15 @@
 import entrees from '../../data/entrees.json';
-import EntreeItem from './EntreeItem';
+import Items from './Items';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Entrees() {
   return (
-    <Container className ="mb-3 mt-3">
+    <Container className ="item-container">
       <Row md ={2} xs={1} lg ={4} className ="g-3">
         {entrees.map(item => (
-          <Col key={item.id}><EntreeItem {...item} /></Col>
+          <Col key={item.id}><Items {...item} /></Col>
         ))}
       </Row>
-
     </Container>
   )
 }

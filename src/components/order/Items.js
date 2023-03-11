@@ -1,6 +1,6 @@
 import { Card, Button } from 'react-bootstrap';
 
-function EntreeItem({id, name, price, imgUrl}) {
+function Items({id, name, price, imgUrl}) {
     return (
       <Card>
         <Card.Img
@@ -20,4 +20,4 @@ function EntreeItem({id, name, price, imgUrl}) {
     );
 }
 
-export default EntreeItem
+export default Items;

@@ -70,9 +70,9 @@ function Orderonline() {
   }
 
   return (
-    <Container fluid style={{ marginTop: "7vw" }}>
+    <Container fluid style={{ marginTop: "7vw"}}>
       <Container>
-        <Navbar sticky='top'>
+        <Navbar className ="sticky">
           {orderCategories.map((i) => {
             return (
                 <Button className="orderCat-BTN" key={i} onClick={() => handleOrder(i)}>
