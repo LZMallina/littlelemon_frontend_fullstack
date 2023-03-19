@@ -1,6 +1,6 @@
 import "../../App.css";
 import "../order/Order.css";
-import { Container, Button, Row, Col, Navbar } from "react-bootstrap";
+import { Container, Button, Row, Col, Navbar, Badge, Modal } from "react-bootstrap";
 import Appetizers from "../order/Appetizers";
 import Entrees from "../order/Entrees";
 import Beverages from "../order/Beverages";
@@ -10,6 +10,7 @@ import KidsMeal from "../order/KidsMeal";
 import Sides from "../order/Sides";
 import SoupAndSalad from "../order/SoupAndSalad";
 import WrapsAndBurgers from "../order/WrapsAndBurgers";
+import { useCartContext } from "../../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShoppingCart,
@@ -17,51 +18,40 @@ import {
   faCirclePlus,
   faCircleMinus,
 } from "@fortawesome/free-solid-svg-icons";
-import useFetchdata from "../hooks/useFetchdata";
-import { useEffect, useState, useReducer } from "react";
-import { ErrorMessage } from "formik";
-
-const orderCategories = [
-  "ENTREES",
-  "APPETIZERS",
-  "BEVERAGES",
-  "DESSERT",
-  "DIPS",
-  "KIDS MEALS",
-  "SIDES",
-  "SOUP AND SALAD",
-  "WRAPS AND BURGERS",
-];
+import { useState } from "react";
 function Orderonline() {
-    const [displayOrder, setDisplayOrder] = useState(<Entrees />);
-
+  const { orderCategories, cartQuantity} = useCartContext();
+  const [displayOrder, setDisplayOrder] = useState(<Entrees />);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   function handleOrder(i) {
     switch (i) {
-      case "APPETIZERS":
+      case "Appetizers":
             setDisplayOrder(<Appetizers />);
         break;
-      case "BEVERAGES":
+      case "Beverages":
         setDisplayOrder(<Beverages />);
         break;
-      case "DESSERT":
+      case "Dessert":
         setDisplayOrder(<Dessert />);
         break;
-      case "DIPS":
+      case "Dips":
         setDisplayOrder(<Dips />);
         break;
-        case "ENTREES":
+        case "Entrees":
             setDisplayOrder(<Entrees />);
         break;
-      case "KIDS MEALS":
+      case "Kids Menu":
         setDisplayOrder(<KidsMeal />);
         break;
-      case "SIDES":
+      case "Sides":
         setDisplayOrder(<Sides />);
         break;
-      case "SOUP AND SALAD":
+      case "Soup and Salads":
         setDisplayOrder(<SoupAndSalad />);
         break;
-      case "WRAPS AND BURGERS":
+      case "Wraps and Burgers":
         setDisplayOrder(<WrapsAndBurgers />);
         break;
       default:
@@ -70,26 +60,39 @@ function Orderonline() {
   }
 
   return (
-    <Container fluid style={{ marginTop: "7vw"}}>
+    <Container fluid style={{ marginTop: "7vw" }}>
       <Container>
-        <Navbar className ="sticky">
+        <Navbar className="sticky overflow-auto">
           {orderCategories.map((i) => {
             return (
-                <Button className="orderCat-BTN" key={i} onClick={() => handleOrder(i)}>
+              <Button
+                className="orderCat-BTN"
+                key={i}
+                onClick={() => handleOrder(i)}
+              >
                 {i}
               </Button>
             );
           })}
-          <Button
-            variant="outline-warning"
-            className="rounded-circle shoppingCart"
-          >
-            <FontAwesomeIcon icon={faShoppingCart} />
+          <Button onClick={handleShow}>
+            <FontAwesomeIcon
+              icon={faShoppingCart}
+              style={{ fontSize: "20px", paddingRight: "2px" }}
+            />
+            <Badge bg="warning" text="dark">
+              {cartQuantity}
+            </Badge>
           </Button>
-          <div className ="number">3</div>
         </Navbar>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Shopping Cart</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h1>This is a modal body</h1>
+          </Modal.Body>
+        </Modal>
       </Container>
-
       <Container className="order-container">
         <Row>
           <Col>{displayOrder}</Col>
