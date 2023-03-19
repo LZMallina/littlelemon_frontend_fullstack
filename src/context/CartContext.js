@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import useFetchdata from "../components/hooks/useFetchdata";
-
+import ShoppingCart from "../components/order/ShoppingCart";
 const CartContext = createContext({});
     
 export const CartcontextProvider = ({ children }) => {
@@ -127,6 +127,7 @@ export const CartcontextProvider = ({ children }) => {
         soupAndSalad,
         wrapsAndburgers,
         sides,
+        list,
         cartProducts,
         getProductQuantity,
         addOneToCart,
@@ -136,6 +137,7 @@ export const CartcontextProvider = ({ children }) => {
       }}
     >
       {children}
+      <ShoppingCart />
     </CartContext.Provider>
   );
 }

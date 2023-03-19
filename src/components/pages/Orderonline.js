@@ -10,6 +10,7 @@ import KidsMeal from "../order/KidsMeal";
 import Sides from "../order/Sides";
 import SoupAndSalad from "../order/SoupAndSalad";
 import WrapsAndBurgers from "../order/WrapsAndBurgers";
+import ShoppingCart from "../order/ShoppingCart";
 import { useCartContext } from "../../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -84,12 +85,12 @@ function Orderonline() {
             </Badge>
           </Button>
         </Navbar>
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} dialogClassName ="adjustModal">
           <Modal.Header closeButton>
             <Modal.Title>Shopping Cart</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h1>This is a modal body</h1>
+            <ShoppingCart />
           </Modal.Body>
         </Modal>
       </Container>

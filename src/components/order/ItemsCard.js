@@ -3,7 +3,7 @@ import { useCartContext } from "../../context/CartContext";
 
 function ItemsCard({ id, name, price, imgUrl }) {
   const { addOneToCart, getProductQuantity, removeOneFromCart, deleteFromCart } = useCartContext();
-  let quantity = getProductQuantity(id);
+  //let quantity = getProductQuantity(id);
     return (
       <Card className="h-100">
         <Card.Img
@@ -18,18 +18,10 @@ function ItemsCard({ id, name, price, imgUrl }) {
             <span className="ms-2 text-muted">{`$ ${price}`}</span>
           </Card.Title>
           <div className="mt-auto">
-            {quantity === 0 ? (
+            
               <Button className="w-100" onClick={() => addOneToCart(id)}>
                 Add To Cart
               </Button>
-            ) : (
-              <div>
-                <Button onClick={() => removeOneFromCart(id)}>-</Button>
-                <span>{quantity} in cart</span>
-                <Button onClick={() => addOneToCart(id)}>+</Button>
-                <Button onClick={() => deleteFromCart(id)}>remove</Button>
-              </div>
-            )}
           </div>
         </Card.Body>
       </Card>
