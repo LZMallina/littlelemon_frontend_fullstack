@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button, Stack } from 'react-bootstrap';
+import { Container, Stack } from 'react-bootstrap';
 import { useCartContext } from "../../context/CartContext";
 import CartItem from './CartItem';
 

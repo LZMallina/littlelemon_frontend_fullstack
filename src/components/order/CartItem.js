@@ -16,15 +16,18 @@ function CartItem({ id, quantity }) {
         gap={2}
         className="d-flex justify-content-between"
       >
-        {item.name}
+        <div style={{ width: "300px" }}>{item.name}</div>
         <Stack
           direction="horizontal"
           className="d-flex justify-content-evenly"
           gap={5}
         >
-          <div> {` $${item.price}`}</div>
+          <div style={{ width: "70px" }}>
+            {" "}
+            {` $${item.price}`}
+          </div>
 
-          <div>
+          <div style={{ width: "80px" }}>
             <button onClick={() => removeOneFromCart(id)}>-</button>
             <span style={{ background: "lightblue", padding: "7px" }}>
               {" "}
@@ -32,7 +35,7 @@ function CartItem({ id, quantity }) {
             </span>
             <button onClick={() => addOneToCart(id)}>+</button>
           </div>
-          <div>
+          <div style={{ width: "100px", textAlign:'right' }}>
             <span style={{ marginRight: "10px" }}>
               ${item.price * productQuantity}
             </span>
