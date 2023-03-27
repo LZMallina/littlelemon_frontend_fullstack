@@ -1,9 +1,10 @@
 import { Card, Button } from 'react-bootstrap';
 import { useCartContext } from "../../context/CartContext";
 
+//single item display
 function ItemsCard({ id, name, price, imgUrl }) {
-  const { addOneToCart, getProductQuantity, removeOneFromCart, deleteFromCart } = useCartContext();
-  //let quantity = getProductQuantity(id);
+  const { addOneToCart} = useCartContext();
+
     return (
       <Card className="h-100">
         <Card.Img

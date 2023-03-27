@@ -12,6 +12,9 @@ const saveData = (key, data) => {
     if (key === 'signupData') {
         localStorage.setItem('signupData', JSON.stringify(data));
     } 
+    if (key === "shoppingData") {
+        localStorage.setItem('shoppingData', JSON.stringify(data));
+    }
 }
 
 export default saveData;

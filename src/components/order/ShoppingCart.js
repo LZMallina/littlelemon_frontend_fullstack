@@ -1,7 +1,7 @@
-import { Container, Stack } from 'react-bootstrap';
+import { Container, Stack, Button } from 'react-bootstrap';
 import { useCartContext } from "../../context/CartContext";
 import CartItem from './CartItem';
-
+//inside model
 function ShoppingCart() {
   const {cartProducts, list} = useCartContext();
   return (
@@ -13,9 +13,11 @@ function ShoppingCart() {
         <div className="fw-bold fs-5" style={{textAlign:'right'}}>
           SUBTOTAL $ {cartProducts.reduce((total, cartProduct) => {
             const item = list.find((i) => i.id === cartProduct.id)
-            return total + (item?.price || 0) * cartProduct.quantity
+            const subtotal = total + (item?.price || 0) * cartProduct.quantity;
+            return Math.round(subtotal *100)/100
           },0)}
         </div>
+        <Button variant ="success">CHECK OUT</Button>
       </Stack>
     </Container>
   )

@@ -152,3 +152,9 @@ $ npx json-server -p 3500 -w data/db.json
 ## Organize the data
 * data folder inside SRC
 * image folder inside public
+* update product information inside data folder and uploaded into little_lemon_api
+
+## ContextAPI
+* created a context API to transmit functions and data needed for order online.
+
+## Checkout and Stripe Payment

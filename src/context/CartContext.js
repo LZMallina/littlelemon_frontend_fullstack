@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import useFetchdata from "../components/hooks/useFetchdata";
-import ShoppingCart from "../components/order/ShoppingCart";
+
 const CartContext = createContext({});
     
 export const CartcontextProvider = ({ children }) => {
@@ -93,27 +93,6 @@ export const CartcontextProvider = ({ children }) => {
 
   const cartQuantity = cartProducts.reduce((quantity, item)=>item.quantity + quantity, 0)
 
-  //getting
-  /* 
- const getProductData = (id) => {
-   let productData = list.find(product => product.id === id);
-
-   if (productData === undefined) {
-     console.log("product data does nto exist for id:" + id);
-     return undefined;
-   }
-   return productData;
-   }*/
-  /*
-  const getTotalCost = () => {
-    let totalCost = 0;
-    cartProducts.map((cartItems) => {
-      const productData = getProductData(cartItems.id);
-      totalCost += (productData.price * cartItems.quantity);
-  });
-  return totalCost;
-   };*/
-
   return (
     <CartContext.Provider
       value={{
@@ -137,7 +116,6 @@ export const CartcontextProvider = ({ children }) => {
       }}
     >
       {children}
-      <ShoppingCart />
     </CartContext.Provider>
   );
 }

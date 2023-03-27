@@ -1,7 +1,8 @@
 import { Stack} from 'react-bootstrap';
 import { useCartContext } from "../../context/CartContext";
 
-function CartItem({ id, quantity }) {
+//inside modal
+function CartItem({id}) {
 
     const { addOneToCart, getProductQuantity, removeOneFromCart, deleteFromCart, list } =
         useCartContext();
@@ -16,18 +17,16 @@ function CartItem({ id, quantity }) {
         gap={2}
         className="d-flex justify-content-between"
       >
-        <div style={{ width: "300px" }}>{item.name}</div>
+        <img src={process.env.PUBLIC_URL + item.imgUrl} alt="food-img" style={{width:'80px'}} />
+        <div style={{ width: "350px", textAlign:'left'}}>{item.name}</div>
         <Stack
           direction="horizontal"
           className="d-flex justify-content-evenly"
           gap={5}
         >
-          <div style={{ width: "70px" }}>
-            {" "}
-            {` $${item.price}`}
-          </div>
+          <div style={{ width: "70px", textAlign:'right'}}> {` $${item.price}`}</div>
 
-          <div style={{ width: "80px" }}>
+          <div style={{ width: "80px", textAlign:'right'}}>
             <button onClick={() => removeOneFromCart(id)}>-</button>
             <span style={{ background: "lightblue", padding: "7px" }}>
               {" "}
@@ -35,7 +34,7 @@ function CartItem({ id, quantity }) {
             </span>
             <button onClick={() => addOneToCart(id)}>+</button>
           </div>
-          <div style={{ width: "100px", textAlign:'right' }}>
+          <div style={{ width: "100px", textAlign: "right" }}>
             <span style={{ marginRight: "10px" }}>
               ${item.price * productQuantity}
             </span>
