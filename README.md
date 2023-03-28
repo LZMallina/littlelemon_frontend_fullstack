@@ -158,3 +158,11 @@ $ npx json-server -p 3500 -w data/db.json
 * created a context API to transmit functions and data needed for order online.
 
 ## Checkout and Stripe Payment
+
+1. Go to stripe.com to create a developer account.
+2. Copy your stripe secret key and save it somewhere
+3. Outside of your src folder, create a server folder to handle the backend
+$ npm init -y (to initiate package.json)
+$ npm i express stripe dotenv (this is to install exress stripe and create a environment for us)
+$ npm i --save-dev nodemon (this is a dependency that restart our server during development)
+4. create server.js inside server folder

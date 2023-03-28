@@ -1,8 +1,9 @@
-
-
 function Success() {
   return (
-    <div>Success</div>
+    <div>
+      <p>Thank you for your order.</p>
+      <p>Your order will be ready in 15 minutes.</p>
+    </div>
   )
 }
 
