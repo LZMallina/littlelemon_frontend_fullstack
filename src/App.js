@@ -8,6 +8,7 @@ import Orderonline from './components/pages/Orderonline';
 import Login from './components/pages/Login';
 import RegistrationForm from './components/pages/RegistrationForm';
 import ConfirmationPage from './components/pages/ConfirmationPage'
+import Checkout from "./components/pages/Checkout";
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import { CartcontextProvider } from './context/CartContext';
@@ -26,6 +27,7 @@ function App() {
             <Route path="/login" element={<Login />}></Route>
             <Route path="/registration" element={<RegistrationForm />}></Route>
             <Route path="/confirmation" element={<ConfirmationPage />}></Route>
+            <Route path="/checkout" element={<Checkout />}></Route>
           </Routes>
         </main>
         <Footer />

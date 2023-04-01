@@ -13,7 +13,7 @@ const saveData = (key, data) => {
         localStorage.setItem('signupData', JSON.stringify(data));
     } 
     if (key === "shoppingData") {
-        localStorage.setItem('shoppingData', JSON.stringify(data));
+        sessionStorage.setItem('shoppingData', JSON.stringify(data));
     }
 }
 

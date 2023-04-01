@@ -165,4 +165,8 @@ $ npx json-server -p 3500 -w data/db.json
 $ npm init -y (to initiate package.json)
 $ npm i express stripe dotenv (this is to install exress stripe and create a environment for us)
 $ npm i --save-dev nodemon (this is a dependency that restart our server during development)
-4. create server.js inside server folder
+4. create server.js inside server folder and code the express skeleton
+5. go to package.json, inside "scripts":{
+  "devStart":"nodemon server.js"
+}
+6. npm run devStart to start your express server

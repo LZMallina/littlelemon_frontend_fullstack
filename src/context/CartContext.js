@@ -1,11 +1,16 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import useFetchdata from "../components/hooks/useFetchdata";
+import saveData from "../components/hooks/saveData";
 
 const CartContext = createContext({});
     
 export const CartcontextProvider = ({ children }) => {
   //Array to store quantity and id of the products
   const [cartProducts, setCartProducts] = useState([]);
+
+  //send shopping data to sessionStorage (localStorage had to delete browser history everytime)
+  
+ saveData("shoppingData", cartProducts);
 
   //Fetch products from API
   const { list, fetchItems } = useFetchdata();
@@ -91,7 +96,9 @@ export const CartcontextProvider = ({ children }) => {
     });
   };
 
-  const cartQuantity = cartProducts.reduce((quantity, item)=>item.quantity + quantity, 0)
+  const cartQuantity = cartProducts.reduce((quantity, item) => item.quantity + quantity, 0)
+  
+  const resetShoppingCart = () => setCartProducts([]);
 
   return (
     <CartContext.Provider
@@ -113,6 +120,7 @@ export const CartcontextProvider = ({ children }) => {
         removeOneFromCart,
         deleteFromCart,
         cartQuantity,
+        resetShoppingCart
       }}
     >
       {children}

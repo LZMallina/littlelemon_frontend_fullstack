@@ -7,7 +7,7 @@ import saveData from '../hooks/saveData';
 import { Link, useNavigate } from 'react-router-dom';
 function BookingForm({ submittedDate, pickedTime, submittedGuestN, goUp }) {
     
-    const confirm = useNavigate();
+    const confirm = useNavigate();// to redirect to confirmation page
     //convert submittedDate to human standard
     const formatDate = submittedDate?new Date(submittedDate).toLocaleDateString():new Date().toLocaleDateString();
 
@@ -43,7 +43,6 @@ function BookingForm({ submittedDate, pickedTime, submittedGuestN, goUp }) {
     });
     const onSubmit = (values, onSubmitProps) => {
         console.log("Form values", values)
-        //alert(JSON.stringify(values, null, 2));
     
         //need to pass submitted data into sessionStorage
         const data = {
