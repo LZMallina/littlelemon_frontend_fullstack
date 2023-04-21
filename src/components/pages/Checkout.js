@@ -22,7 +22,12 @@ function Checkout() {
   const [message, setMessage] = useState('');
 
   const handleMessage = () => {
-    setMessage(`Thank you ${name}.  See you in 20 minutes.  Check your email for confirmation.`)
+    setMessage(
+      <p style={{ padding: "20px", textAlign: 'justify', background:'yellow' }}>
+        Thank you {name}. See you in 20 minutes. Check your email for
+        confirmation.
+      </p>
+    );
   }
     const initialValues = {
       name: "",
@@ -45,8 +50,8 @@ function Checkout() {
       console.log("form submitted");
     };
   return (
-    <Container fluid style={{ marginTop: "10vw", padding: '20px' }}>
-      <p style={{color:'green'}}>Checkout</p>
+    <Container fluid style={{ marginTop: "10vw", padding: "20px" }}>
+      <p style={{ color: "green" }}>Checkout</p>
       <Row>
         <Col>
           <Container
@@ -77,6 +82,7 @@ function Checkout() {
               const item = list.find((i) => i.id === product.id);
               return (
                 <Stack
+                  key={product.id}
                   direction="horizontal"
                   className="d-flex justify-content-evenly"
                   gap={5}
@@ -158,30 +164,34 @@ function Checkout() {
                       />
                       <Button
                         type="submit"
-                        disabled={Formik.isSubmitting}
+                        disabled={formik.isSubmitting}
                         variant="warning"
                         className="w-100"
                       >
-                        Click button to continue checkout as guest
-                      </Button>
+                        Continue checkout as guest
+                      </Button><br /><br />
+                      <h3>How would you like to pay?</h3>
+                      <br />
+                      <Stack
+                        direction="horizontal"
+                        className="d-flex justify-content-evenly"
+                        gap={2}
+                      >
+                        <Button
+                          disabled={!name}
+                          onClick={() => handleMessage()}
+                        >
+                          At pickup
+                        </Button>
+                        <Button disabled={!name}>Online</Button>
+                      </Stack>
+                      <br />
+                      {message}
                     </Container>
                   </Form>
                 );
               }}
             </Formik>
-            <Container style={{ textAlign: "center" }}>
-              <h3>How would you like to pay?</h3>
-              <br />
-              <Stack
-                direction="horizontal"
-                className="d-flex justify-content-evenly"
-                gap={2}
-              >
-                <Button onClick={() => handleMessage()}>At pickup</Button>
-                <Button>Online</Button>
-              </Stack><br />
-              <p style={{padding:"20px", textAlign:'justify', background:'yellow'}}>{message}</p>
-            </Container>
           </Container>
         </Col>
       </Row>
