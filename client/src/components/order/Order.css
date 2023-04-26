@@ -1,0 +1,43 @@
+
+.orderCat-BTN{
+    background:var(--yellow);
+    margin:10px;
+    color:var(--green)
+}
+.orderCat-BTN:active{
+    background:blue;
+}
+
+.sticky{
+    position:fixed;
+    background:white;
+    width:85%;
+    top:6vw;
+    z-index:1;
+}
+.item-container{
+    margin-top:100px;
+    margin-bottom:20px;
+}
+.adjustModal{
+    max-width:650px;
+}
+
+
+/**Payment Form **/
+.creditcardForm{
+    padding: 20px;
+    display:block;
+    margin:auto;
+    text-align:center;
+    width:500px;
+}
+.creditcardInput{
+    padding:5px;
+    width:300px;
+    border-radius:5px;
+}
+.flex-creditbox{
+    display:flex;
+    justify-content: center;
+}
