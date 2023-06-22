@@ -1,4 +1,4 @@
-# Objective:
+# Meta Front-End Developer Certification Capstone project:
 * Build a website for the Little Lemon restaurant in this Capstone project.
 * Complete tasks assigned each week
 
