@@ -1,4 +1,4 @@
-# Meta Front-End Developer Certification Capstone project:
+# Meta Front-End Developer Certification Capstone project that I turned into a Full Stack project:
 * Build a website for the Little Lemon restaurant in this Capstone project.
 * Complete tasks assigned each week
 
